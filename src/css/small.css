@@ -214,6 +214,8 @@ input[type="checkbox"] {
    flex-direction: row; 
      }
 
+    
+
 /* Footer Code to be cleaned up */
      .main-footer {
       font-size: 0.4;
@@ -240,4 +242,20 @@ input[type="checkbox"] {
   content: "";
   display: table;
   clear: both;
+}
+
+/* tabs or dividers in the libray display id="myLIB"  using js from libray.js*/
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+
+  background-color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: var(--tertiary-color);
 }
