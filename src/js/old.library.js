@@ -1,8 +1,8 @@
-import { loadHeaderFooter } from "./utils.js";
+// import { loadHeaderFooter } from "./utils.js";
 import LibraryActions from "./libraryActions.js";
 
 //put in the header & footer
-loadHeaderFooter();
+// loadHeaderFooter();
 
 
 
