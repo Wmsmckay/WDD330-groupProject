@@ -11,6 +11,7 @@ export default class SearchResults {
     this.searchTerm = searchTerm;
     this.dataSource = dataSource;
     this.listElement = listElement;
+    // this.listElement.innerHTML = [];
   }
 
   async init() {
@@ -22,14 +23,18 @@ export default class SearchResults {
   }
 
   async renderList(list) {
-    // this.listElement.innerHTML = "";
-    const cardTemplate = await loadTemplate("./partials/searchResults.html");
-    renderListWithTemplate(
-      cardTemplate,
-      this.listElement,
-      list,
-      this.prepareTemplate
-    );
+    this.listElement.innerHTML = "";
+    if (this.searchTerm != null) {
+      const cardTemplate = await loadTemplate("./partials/searchResults.html");
+      renderListWithTemplate(
+        cardTemplate,
+        this.listElement,
+        list,
+        this.prepareTemplate
+      );
+    }
+    // console.log(this.searchTerm)
+    
   }
 
   prepareTemplate(templateClone, book) {

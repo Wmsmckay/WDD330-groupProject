@@ -24,7 +24,6 @@ readingButton.addEventListener("click", () => {
     //create a LibraryActions class object with "reading-shelf" argument
     //to make it possible to access its "getShelvedBooks" method
     let shelf = new LibraryActions("reading-shelf");
-    readingButton.setAttribute("class", ".active")
     //this will add the list of books their reading to the page
     shelf.getShelvedBooks();
 })
@@ -40,19 +39,6 @@ wantButton.addEventListener("click", () => {
     shelf.getShelvedBooks();
 })
 
-//active listener for book shelve buttons MyLIB
-// This script adds active class to the current button (highlight it)
-// var header = document.getElementById("myLIB");
-// var btns = document.querySelectorAll("btn");
-// // for (var i = 0; i < btns.length; i++) {
-//   btns.addEventListener("click", function() {
-//     console.log("I am working")
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace("active","");
-//   this.className += "active";
-//   });
-// }
-
 // Add active class to the current button (highlight it)
 var header = document.getElementById("MyLIB");
 var btns = header.getElementsByClassName("btn");
@@ -63,7 +49,3 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
-// 
-
-
-

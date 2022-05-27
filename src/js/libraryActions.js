@@ -13,7 +13,7 @@ let connection = new ExternalServices();
 
 //class for external use as a module
 export default class LibraryActions {
-  constructor(storageKey) {
+  constructor(storageKey = "") {
     this.storageKey = storageKey;
     this.bookShelf = [];
     this.book = {};
@@ -27,7 +27,10 @@ export default class LibraryActions {
     this.bttnNameWant = "";
   }
 
-  async getShelvedBooks() {
+  async getShelvedBooks(givenKey) {
+    this.storageKey = givenKey
+    
+
     //create variable for the element to insert list into
     const insertionPoint = document.getElementById("my_book_lists");  
     //create title to show what shelf is being listed       
