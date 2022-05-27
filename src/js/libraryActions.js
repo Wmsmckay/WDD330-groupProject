@@ -97,6 +97,7 @@ export default class LibraryActions {
   }
 
   async displayBooksFromShelf(insertionPoint2) {
+    insertionPoint2.innerHTML = ""
     for (const bookId of this.bookShelf) {
       this.book = await connection.findBookById(bookId.id, false);
       // console.log(this.book);
