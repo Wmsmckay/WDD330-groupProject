@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Cloud Shelf Library</title>
-    <meta
-      name="description"
-      content="Personal library page for Cloud Shelf users"
-    />
+    <title>Cloud Shelf Homepage</title>
+    <meta name="description" content="Homepage for Cloud Shelf users" />
     <!-- style sheets -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/large.css" />
+
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,66 +20,90 @@
     />
     <!-- Added to fix flavacon error -->
     <link rel="shortcut icon" href="#" />
-    <script src="./js/library.js" type="module" defer></script>
+    <script src="./js/main.js" type="module" defer></script>
   </head>
-  <header>
-    <!-- Insert Header Template Hear -->
-  </header>
+  <!-- Insert Header Template Here -->
+  <header></header>
 
   <body>
     <section>
-      <div class="bannerS">
-        <div class="bannerS-image" style="background-image:url(./images/Booksstack.png)">
-          <h2>Build My Library</h2>
+      <div class="banner">
+        <div class="banner-image" style="background-image:url(./images/booksHero.png)">
+          <h2>Search Your Library</h2>
+          <p>Worlds await you</p>
         </div>
       </div>
+
       <div class="wrapper">
         <div id="MyLIB">
-          <button class="btn active">
+          <button class="btn">
             <img
               src="./images/ReadingIcon.png"
-              max
-              width="100px"
               rel="images"
+              Max
+              width="100px"
               alt="Books I'm Reading"
-              id="reading_bttn"              
             />
           </button>
           <button class="btn">
             <img
               src="./images/wantIcon.png"
-              max
-              width="100px"
               rel="images"
+              Max
+              width="100px"
               alt="books I want to Read"
-              id="want_bttn"
             />
           </button>
+
           <button class="btn">
             <img
               src="./images/ReadBeforeIcon.png"
-              max
-              width="100px"
               rel="images"
+              Max
+              width="100px"
               alt="books I want to Read"
-              id="read_bttn"
             />
           </button>
         </div>
       </div>
     </section>
-    <main id="my_book_lists">
-      <section class="page-content"></section>
-      <!-- <div class="banner2">
-        <p>
-          Search for books and create your personal library of books you desire
-          to read, books you are reading and completed.
-        </p>
-      </div> -->
-      <!-- List for each book shelf of "Read"/"Reading"/"Want to Read" -->
-    </main>
+    <section class="bookshelf">
+      <a href="#">
+        <img
+          src="./images/reading.png"
+          rel="images"
+          Max
+          width="325px"
+          alt="Books I'm Reading"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="./images/WantTo.png"
+          rel="images"
+          Max
+          width="325px"
+          alt="books I want to Read"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="./images/read.png"
+          rel="images"
+          Max
+          width="325px"
+          alt="books I want to Read"
+        />
+      </a>
+    </section>
+    <div class="banner2">
+      <p>
+        Search for books and create your personal library of books you desire to
+        read, books you are reading and completed.
+      </p>
+    </div>
     <div class="footer-banner">
-      <footer>
+      <footer id="footer">
         <!-- Insert Footer Template Here -->
       </footer>
     </div>
