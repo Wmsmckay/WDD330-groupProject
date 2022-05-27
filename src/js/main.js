@@ -19,7 +19,12 @@ if (search != null){
 }
 
 
-// Information button functionality
+// // Information button functionality
+// document
+//     .getElementById("info_btn")
+//     .setAttribute("href", "./index.html")
+//     .addEventListener("click", () => {})
+
 
 // Shelves buttons
 
