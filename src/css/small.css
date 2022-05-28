@@ -54,7 +54,7 @@ li {
 .navbar {
   display: grid;
   gap: 1em;
-  grid-template-columns: 15% auto 10%;
+  grid-template-columns: 15% auto 15%;
   align-items: center;
   /* justify-content: space-between; */
   /* padding: 20px; */
