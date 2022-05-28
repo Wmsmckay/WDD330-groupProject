@@ -8,15 +8,7 @@ import LibraryActions from "./libraryActions"
 loadHeaderFooter();
 
 
-// Searchbar functionality
-// Get the search input and display the results
-const search = getParam("searchInput");
-if (search != null){
-    const externalServices = new ExternalServices();
-    const listElement = document.querySelector(".page-content");
-    const searchResults = new SearchResults(search, externalServices, listElement);
-    searchResults.init();
-}
+
 
 
 // // Information button functionality

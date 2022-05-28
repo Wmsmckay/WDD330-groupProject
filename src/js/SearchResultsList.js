@@ -23,8 +23,9 @@ export default class SearchResults {
   }
 
   async renderList(list) {
-    this.listElement.innerHTML = "";
+    // this.listElement.innerHTML = "";
     if (this.searchTerm != null) {
+      document.getElementById("result-title").innerHTML += this.searchTerm
       const cardTemplate = await loadTemplate("./partials/searchResults.html");
       renderListWithTemplate(
         cardTemplate,
