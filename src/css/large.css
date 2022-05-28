@@ -13,7 +13,7 @@
 /* 69em = 1104px with 16px base */
 @media only screen and (min-width: 768px) {
   .card_size {
-    width: 400px;
+    width: 660px;
   }
   /* NAVBAR STYLING STARTS */
   .navbar {
