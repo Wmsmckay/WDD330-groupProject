@@ -39,6 +39,11 @@
   box-sizing: border-box;
 }
 
+html,body{ 
+  overflow-x:hidden;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -49,24 +54,26 @@ li {
 /* ||NAVBAR STYLING */
 .navbar {
   display: grid;
-  gap: 1em;
-  grid-template-columns: 15% auto 10%;
-  align-items: center;
+  gap: .5em;
+  grid-template-columns: 10% auto 45%; 
+  align-items:left;
   /* justify-content: space-between; */
   /* padding: 20px; */
   background-color: var(--tertiary-color);
-  color: #000;
+  color: var(--black);
   padding: 1em;
+  padding-right: 10%;
 }
 .navbar img {
-  width:6rem;
+  /* width:6rem; */
   margin-right: 10%;
+  width:40px;
   /* width: 100%; */
 }
 .navbar H1{
   font-family: var(--font-headline);
-  font-size: 3.2rem;
-  padding-left: .3rem;
+  font-size: 1.6rem;
+  padding-left: .1rem;
   margin-top: .2rem;
   margin-bottom: .2rem;
 }
@@ -115,7 +122,7 @@ input[type="search"]:focus {
   font-size: 22px;
   display: flex;
   align-items: center;
-  max-width: 100px;
+  /* max-width: 100px; */
 }
 /* NAVBAR MENU */
 
@@ -249,6 +256,7 @@ footer a:active {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  /* width: 100%; */
 }
 
 .banner h2 {

@@ -1,0 +1,65 @@
+/* medium veiwport styles */
+/* @media only screen and (min-width: 641px) and (max-width: 880px){ */
+    
+    @media only screen and (min-width:641px){
+    .navbar H1{
+        font-family: var(--font-headline);
+        font-size: 3.4rem;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+    }
+    
+     /* .menu {
+        border: none;
+        font-family: var(--font-body);
+        font-size: 1rem;
+        text-align:left;
+        align-items: left;
+    }  */
+    .navbar img {
+        width:90px;
+        margin-right: 10%;
+        
+}
+.navbar {
+    display: grid;
+    gap: .5em;
+    grid-template-columns: 15% auto 45%; 
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 20px; */
+    background-color: var(--tertiary-color);
+    color: var(--black);
+    padding: 2em;
+  }
+
+    .menu {
+      display: none;
+      position: absolute;
+      background-color: var(--tertiary-color);
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+    }
+    .menu li:hover {
+      display: inline-block;
+      background-color: var(--quaternary-color);
+      transition: 0.3s ease;
+    }
+    .menu li + li {
+      margin-top: 12px;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+      display: block;
+    }
+    .hamburger {
+      display: block;
+    }
+
+    .search-container form {
+        grid-column: 2/3;
+        width: 100%;
+      } 
+  }
+  
