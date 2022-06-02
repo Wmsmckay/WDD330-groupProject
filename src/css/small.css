@@ -278,7 +278,7 @@ input[type="checkbox"] {
 /* end css hamburger */
 
 .menu {
-  margin-top: 1em;
+  margin-top: 3em;
   display: flex;
   gap: 1em;
   font-size: 18px;
